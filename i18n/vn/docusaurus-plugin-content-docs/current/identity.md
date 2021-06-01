@@ -29,7 +29,9 @@ Bạn sẽ thấy một cửa sổ bật lên có tên là *register identity*. 
 * riot name (Trong trường hợp bạn sử dụng Matrix messaging)
 
 :::note
+
 Tất cả thông tin này là tùy chọn - vui lòng chỉ cung cấp các chi tiết bạn chọn. Tuy nhiên, nếu bạn đang chạy một node trình xác thực, chúng tôi khuyên bạn nên đặt email của mình . Điều này sẽ cho phép chúng tôi liên hệ với bạn trong trường hợp chúng tôi gặp sự cố với node của bạn.
+
 :::
 
 Trong trường dữ liệu cuối cùng của cửa sổ bật lên, bạn có thể thấy số lượng HDX bạn cần nạp để lưu trữ thông tin nhận dạng của mình. Bạn sẽ nhận lại khoản tiền gửi này sau khi bạn quyết định xóa danh tính của mình vào thời điểm sau đó.
