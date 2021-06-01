@@ -1,0 +1,114 @@
+---
+id: claim
+title: Xác nhận quyền sở hữu HDX của bạn
+---
+
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
+Bạn có thể xác nhận quyền sở hữu HDX của bạn với xHDX tokens (ERC-20) mà bạn đã mua trong quá trình bán trên [Balancer LBP](https://hydradx.substack.com/p/lbp-announcement) của chúng tôi.
+
+:::note
+
+Bạn không có bất kỳ xHDX tokens nhưng bạn vẫn muốn có một ít HDX? Cám ơn sự quan tâm của bạn nhưng đó là điều không thể ở thời điểm hiện tại để mua bất kỳ HDX Token - sự di chuyển của HDX đã bị đóng băng cho đến khi Mainnet. Tuy nhiên khi chúng tôi tiến đến mainnet, chúng tôi sẽ chạy những chương trình khuyến khích có thưởng cho cộng đồng, ở đó bạn có thể sớm kiếm được HDX. Nếu bạn cảm thấy quan tâm, hãy [đăng ký newsletter](https://hydradx.substack.com) và tham gia vào Discord server của chúng tôi để cập nhật tin mới nhất.  
+
+:::
+
+## Điều kiện Tiên Quyết {#prequisites}
+
+Có hai điều khiện để xác nhận quyền sở hữu HDX của bạn. Điều kiện thứ nhất là bạn cần cài đặt [tiện ích mở rộng cho trình duyệt Polkadot.js](https://polkadot.js.org/extension/)  Nó sẽ được sử dụng để tạo ví HDX của bạn. Điều kiện thứ hai, bạn cần truy cập vào ví chứa xHDX token của bạn và ví đó có hỗ trợ xác nhận tin nhắn liên quan đến ERC-20 tokens (ví dụ. Metamask).
+
+Nếu bạn lưu trữ xHDX token của bạn ở ví Coinbase hoặc ví Trustwallet, bạn sẽ cần sử dụng một trong những hướng cách giải quyết sau để xác nhận quyền sở hữu HDX của bạn khi mà những ví đó không hỗ trợ ký xác nhận tin nhắn:
+* Metamask: Bạn cần sử dụng tiện ích mở rộng cho trình duyệt Metamask và nhập ví của bạn bằng cách sử dụng Khôi phục tài khoản của bạn bằng cụm mật khẩu gốc.
+* MEW (MyEtherWallet): Bạn cũng có thể sử dụng MEW bằng cách nhập cụm mật khẩu khôi phục gốc của bạn (*Mnemonic Phrase*) hoặc bằng cách sử dụng lựa chọn kết nối WalletLink. Cả hai cách có thể được [xử lý ở trang MEW wallet](https://www.myetherwallet.com/access-my-wallet). Nếu bạn đang sử dụng ví Coinbase, bạn có thể sử dụng WalletLink , bạn có thể tìm thấy cài đặt đó trong ví Coibase.
+
+## Quá Trình xác nhận quyền sở hữu  {#claim-process}
+
+Sau khi chắc chắn rằng bạn đã đạt đủ điều kiện được miêu tả ở bên trên, bạn có thể truy cập vào [HydraDX Claim app](https://claim.hydradx.io) và tiến hành quá trình xác nhận quyền sở hữu .
+
+Trong quá trình xác nhận quyền sở hữu này, bạn sẽ sử dụng xHDX tokens (ERC-20) của bạn để xác nhận quyền sở hữu HDX tokens của bạn.
+
+### 00 Cấp phép {#00-authorize}
+
+HydraDX Claim app sẽ yêu cầu cấp phép từ tiện ích mở rộng trình duyệt Polkadot.js
+
+:::warning
+
+Hãy chắc chắn rằng bạn không là nạn nhân của một cuộc tấn công giả mạo và hãy chú ý tới popup cấp phjeps : Ứng dụng này nên được xác định chính là **CLAIM.HYDRADX.IO** và yêu cầu nên đến từ **https://claim.hydradx.io**.
+
+:::
+
+<img alt="authorize" src={useBaseUrl('/claim/authorize.jpg')} />
+
+Sau quá trình cấp phép, bạn sẽ được gợi ý cập nhật metadata cho tiện ích mở rộng cho trình duyệt Polkadot.js . Điều đó sẽ cho phép Polkadot.j tạo ra những địa chỉ HydraDX đặc trưng, điều đó được yêu cầu để hoàn thành quá trình xác nhận quyền sở hữu. 
+
+<img alt="authorize" src={useBaseUrl('/claim/metadata.jpg')} />
+
+### 01 Chọn Dịa Chỉ ETH Của Bạn {#01-select-your-eth-address}
+
+Bước đầu tiên quy trình xác nhận quyền sở hữu, bạn sẽ được yêu cầu chọn tài khoản bạn đang lưu trữ xHDX tokens. Điều này có thể được thực hiện bởi một trong hai cách kết nối tới ví chứa ERC-20 tokens của bạn (ví dụ: Metamask) hoặc bằng cách điền thủ công địa chỉ ví ETH của bạn vào trong ô nhập liệu ( trong trường hợp bạn sẽ cần ký xác nhận tin nhắn theo cách thủ công sau đó). 
+
+Sau khi nhập địa chỉ ETH của mình, bạn sẽ thấy số dư mã thông báo HDX mà bạn có thể yêu cầu, bao gồm cả [tiền hoàn lại phí gas](https://hydradx.substack.com/p/first-governance-vote) mà bạn đã chi tiêu để mua xHDX của bạn trên Balancer.
+
+:::note
+
+Bạn không hợp lệ để hoàn lại phí gas nếu bạn đã mua xHDX của bạn ở một nơi nào đó không phải là ở Balancer pool chính thức ( như là Uniswap) , hoặc nếu bạn đã di chuyển tokens của bạn ra khỏi ví đã mua ban đầu.
+
+:::
+
+<img alt="authorize" src={useBaseUrl('/claim/claim-01.jpg')} />
+
+### 02 Tạo và chọn địa chỉ ví HDX {#02-create-and-select-an-hdx-address}
+
+Trong bước thứ hai, bạn sẽ được hỏi chọn địa chỉ ví HDX của bạn.
+
+Để tạo một địa chỉ ví HDX mới, mở tiện ích mở rộng cho trình duyệt Polkadot.js và nhấn vào + đăng ký để tạo một tài khoản mới . Trong bước đầu của quá trình tạo tài khoản, bạn sẽ thấy 12 từ khóa gợi nhớ , chúng có thể được sử dụng để khôi phục tài khoản của bạn. Sau khi lưu cụm mật khẩu gốc vào nơi bảo mật, nhấn vào *Next step*. Ở đây, bạn nên thay đổi **Network** bằng cách chọn tùy chọn **HydraDX Snakenet** . Điền một tên và mật khẩu cho tài khoản của bạn và hoàn tất quá trình tạo tài khoản.
+
+<img alt="authorize" src={useBaseUrl('/claim/create-account.png')} />
+
+:::warning
+
+Hãy chắc chắn rằng bạn đã sao lưu cụm mật khẩu gốc bằng cách lưu trữ nó ở một nơi an toàn và không bao giờ chia sẻ nó cho bất kì ai. Sử dụng cụm mật khẩu khốc là cách duy nhất bạn có thể khôi phục tài khoản của bạn, nếu bạn làm mất nó hoặc bị người khác biết, ngân quỹ của bạn có thể bị xâm phạm. Xin vui lòng hãy chú ý rằng bạn cần đảm bảo quyền xử lý ví này của bạn cho đến khi mainnet bắt đầu, cho đến khi đó tất cả số dư HDX hiện tại đã bị khóa. Nếu bạn bị mất quyền xử lý ví HDX của bạn điều đó cũng có nghĩa là bạn sẽ mất HDX của bạn.
+
+:::
+
+Sau khi tạo tài khoản HDX của bạn, bạn sẽ có thể chọn nó trong HydraDX Claim app. Sau khi làm như vậy, App này sẽ cung cấp cho bạn môt cách tổng quan của địa chỉ ETH và HDX được sử dụng cho quá trình xác nhận quyền sở hữu. Nhấn vào Next để tiến hành ký xác nhận tin nhắn.
+
+<img alt="authorize" src={useBaseUrl('/claim/claim-02.jpg')} />
+
+### 03 Ký xác nhận {#03-sign}
+
+Ở bước thứ ba của quá trình xác nhận quyền sở hữu, sử dụng HydraDX Claim app, bạn sẽ được cung cấp lựa chọn ký xác nhận tin nhắn sử dụng xHDX tokens của bạn để xác nhận quyền sở hữu token HDX.
+
+:::note
+
+Xin vui lòng lưu ý rằng trong quá bước này, bạn sẽ thấy **public key** của địa chỉ HDX của bạn và địa chỉ này ở dạng không đọc được khi nó được hiện thị trong bước trước đó và trong tiện ích mở rộng trình duyệt Polkadot.js của bạn ( để biết thêm chi tiết, xin tham khảo ở [ss58 docs](https://polkadot.js.org/docs/keyring/start/ss58)). Nếu bạn đã làm theo tất cả các bước được miêu tả phía trên, sẽ không có gì phải lo lắng và nó an toàn để tiến hành quá trình ký xác nhận tin nhắn. Chúng tôi cũng xác nhận rằng tài khoản HDX  bạn đang sử dụng để ký xác nhận giao dịch xác nhận quyền sở hữu này ở bước cuối cùng tương ứng với tài khoản nhận HDX đã xác nhận quyền sở hữu.
+
+:::
+
+Tùy thuộc vào lựa chọn của bạn đã chọn ở bước đầu, bạn có hai lựa chọn to ký xác nhận tin nhắn cho việc sử dụng xHDX token trong quá trình xác nhận quyền sở hữu.
+
+* Nếu bạn đang sử dụng **Metamask**, sau đó nhấn vào nút *Sign* bạn sẽ được gợi ý bởi Metamask để ký xác nhận tin nhắn . Làm theo hướng dẫn của Metamask
+* Nếu bạn đã điền thủ công địa chỉ ví ETH của bạn, bạn sẽ cần ký xác nhận tin nhắn qua ví ngoài chứa xHDX tokens mà bạn nắm giữ private keys . Một khi bạn đã ký xác nhận tin nhắn, sao chép chữ ký ( bắt đầu với *0x* ) tới tính năng tướng ứng trong HydraDX Claim app.
+
+<img alt="authorize" src={useBaseUrl('/claim/claim-03.jpg')} />
+
+### 04 Xác nhận quyền sở hữu {#04-claim}
+
+Sau khi ký xác nhận tin nhắn với ví chứa xHDX tokens của bạn , tiện ích mở rộng Polkadot.js sẽ hiện ra và bạn sẽ được yêu cầu ký xác nhận sự di chuyển cho quá trình xác nhận quyền sở hữu HDX tới tài khoản của bạn. Điền mật khẩu tài khoản HDX của bạn và nhấn vào *Sign the transaction*.
+
+
+<img alt="authorize" src={useBaseUrl('/claim/claim-sign.jpg')} />
+
+Bây giờ bạn đã hoàn thành quá trình xác nhận quyền sở hữu , bằng cách ấy bạn trở thành một chủ sở hữu HDX chính thức.
+
+Bạn có thể kiểm tra số dư của bạn bằng cách sử dụng [Polkadot/apps](https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Frpc-01.snakenet.hydradx.io#/accounts) được kết nối tới HydraDX Snakenet network. Xin vui lòng chú ý thằng bạn không thể thấy số dư HDX của bạn trực tiếp trên tiện ích mở rộng trình duyệt Polkadot.js.
+
+
+### 05 Tiếp theo sẽ là gì? {#05-whats-next}
+
+Sau khi hoàn thành quá trình xác nhận quyền sở hữu, HDX tokens sẽ bị khóa trong ví của bạn cho đến khi mainnet khởi chạy.
+
+Mặt khác, xHDX tokens ( tokens mà bạn sử dụng để xác nhận quyền sở hữu HDX) sẽ bị khóa mãi mãi trong ví ERC-20 của bạn, nghĩa là bạn có thể ẩn chúng từ ví của bạn ( hoặc giữ chúng như một huy hiệu người sở hữu sớm ).
+
+Bạn có muốn để cho HDX tokens của bạn làm việc và giúp cải tiến bảo mật của HydraDX network không? Bạn có thể tham gia vào chương trình thử nghiệm có phần thường của chúng tôi, được gọi là  **Snakenet** bằng cách góp cổ phần HDX token của bạn. Nếu bạn quan tâm, bạn có thể tiến hành bằng cách làm quen với [staking process](/staking), sau đó bạn có thể quyết định tham gia chương trình nào, như một [trình xác thực](/start_validating) hoặc một [người đề cử](/start_nominating).
+
