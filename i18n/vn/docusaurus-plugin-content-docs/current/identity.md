@@ -8,7 +8,9 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 Chủ tài khoản có khả năng thiết lập danh tính của họ bằng cách cung cấp thông tin cụ thể và lưu trữ nó trên on-chain. Bên cạnh đó, thông tin nhận dạng có thể được tùy chọn gửi đến các nhà đăng ký HydraDX để xác minh. Bằng cách thiết lập và xác minh danh tính của họ, các trình xác thực và người đề cử giúp bảo vệ sự tin cậy trong mạng.
 
 :::note
+
 Nếu bạn đang tham gia với tư cách là một trình xác thực HydraDX , chúng tôi **thực sự khuyên** bạn nên đặt cả danh tính của mình và trải qua quá trình xác minh. Những trình xác thực đã được xác minh có vẻ đáng tin cậy hơn và thu hút nhiều người đề cử hơn, do đó tăng cơ hội được đưa vào nhóm trình xác thực đang hoạt động.
+
 :::
 
 ## 01 Thiết lập danh tính {#01-set-identity}
