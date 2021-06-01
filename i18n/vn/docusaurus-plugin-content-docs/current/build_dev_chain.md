@@ -8,7 +8,9 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 Phần này sẽ hướng dẫn bạn quá trình thiết lập một phiên bản local HydraDX-chain instance để phát triển.
 
 :::note
+
 Bạn đang tìm cách thiết lập một Node cho mục đích trình xác thực? Vui lòng chuyển đến [Hướng dẫn thiết lập trình xác thực ](/node_setup) của chúng tôi.
+
 :::
 
 ## 01 Cài đặt các phần phụ thuộc {#01-install-dependencies}
